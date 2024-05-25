@@ -1,0 +1,21 @@
+{
+  "type": "postgres",
+  "host": "dpg-cp8v0f5ds78s73ca4g00-a.oregon-postgres.render.com",
+  "port": 5432,
+  "username": "postgresdb",
+  "password": "etxSw5u2IDMJEzUoUua0oq2rND2dEoqp",
+  "database": "contacts_q5qi",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  },
+  "ssl": {
+    "rejectUnauthorized": false
+  }
+}
